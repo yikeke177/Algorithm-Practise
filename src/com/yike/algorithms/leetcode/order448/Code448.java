@@ -1,4 +1,4 @@
-package com.yike.algorithms.leetcode_other.order448;
+package com.yike.algorithms.leetcode.order448;
 
 import java.util.ArrayList;
 import java.util.HashSet;

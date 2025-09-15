@@ -1,4 +1,4 @@
-package com.yike.algorithms.leetcode_other.order2;
+package com.yike.algorithms.leetcode.order2;
 
 
 /**

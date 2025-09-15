@@ -1,4 +1,4 @@
-package com.yike.algorithms.leetcode_other.order268;
+package com.yike.algorithms.leetcode.order268;
 
 import java.util.Arrays;
 
