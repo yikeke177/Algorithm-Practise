@@ -19,7 +19,7 @@ import java.util.List;
  * @version: 1.0
  */
 public class Code15 {
-    class Solution {
+    public class Solution {
         public List<List<Integer>> threeSum(int[] nums) {
             /**
              * 题目特点 三个数字和为0 所以可以试着把数组进行排序 两个指针指向首尾
