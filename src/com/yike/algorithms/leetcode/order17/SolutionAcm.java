@@ -30,7 +30,7 @@ public class SolutionAcm {
     private static List<String> solve(String digits){
 
         int n = digits.length();
-        if(n == 0)return List.of();
+        if(n == 0)return new ArrayList<>();
 
         char[] text = new char[n];
         List<String> ans = new ArrayList<>();
