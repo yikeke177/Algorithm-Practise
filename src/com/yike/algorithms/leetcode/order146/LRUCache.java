@@ -3,6 +3,23 @@ package com.yike.algorithms.leetcode.order146;
 
 import java.util.HashMap;
 
+
+/*
+LRU(least recently used) 最近最少使用
+缓存大小是固定的，每次put可能插入新值，也可能是更新原有的值。
+get操作后的元素会变成最近使用的。
+
+整体思路：
+哈希表 + 双向链表
+哈希表支持O(1)的查询速度
+队列支持先进先出，但由于需要更新最近最少使用，队列的增删效率是O(n)的，也不适合
+双向链表既可以支持先进先出，也增删的效率也是O(1)的
+
+ */
+
+/**
+ * 结点类
+ */
 class Node{
     public int key;
     public int value;
