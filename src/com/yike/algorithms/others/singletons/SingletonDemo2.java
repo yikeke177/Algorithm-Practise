@@ -8,7 +8,7 @@ package com.yike.algorithms.others.singletons;
  */
 public class SingletonDemo2{
 
-    private static SingletonDemo2 instance;
+    private static final SingletonDemo2 instance;
 
     static{
         instance = new SingletonDemo2();
