@@ -10,8 +10,20 @@ public class Code53 {
 
     class Solution {
         public int maxSubArray(int[] nums) {
-            //
-            return 1;
+            int n = nums.length;
+            // 前缀和数组
+            int[] preSum = new int[n + 1];
+            for(int i = 0;i < n;i ++){
+                preSum[i + 1] = preSum[i] + nums[i];
+            }
+
+            int minSum = 0;
+            int ans = Integer.MIN_VALUE;
+            for(int i = 1;i <= n;i ++){
+                ans = Math.max(ans, preSum[i] - minSum);
+                minSum = Math.min(minSum, preSum[i]);
+            }
+            return ans;
         }
     }
 
